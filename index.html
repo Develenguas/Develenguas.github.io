@@ -1,443 +1,523 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Imagenes/icono.png" type="image/x-icon">
-    <title>Luengas DevSite</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Develenguas — Forjador de Código</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="https://github.com/ObjectShalvy" target="_blank" rel="noopener noreferrer">SL</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#proyectos">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#habilidades">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certificaciones">Certificaciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
+    <div id="progress-bar"></div>
+
+    <!-- NAV -->
+    <nav>
+        <div class="nav-rune">EN PROCESO DE DESARROLLO ...</div>
+        <ul>
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#skills">Arsenal</a></li>
+            <li><a href="#projects">Forjas</a></li>
+            <li><a href="#content">Crónicas</a></li>
+            <li><a href="#certifications">Pergaminos</a></li>
+            <li><a href="#cv">Grimorio</a></li>
+            <li><a href="#contact">Invocar</a></li>
+        </ul>
     </nav>
 
-<!-- Hero Section -->
-<section id="inicio" class="hero">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-4 col-md-5 mb-4 mb-md-0">
-                <!-- Imagen responsive -->
-                <div class="hero-image-container">
-                    <img src="Imagenes/Circulo.gif" alt="Salvador Luengas" class="img-fluid rounded shadow">
-                </div>
+    <!-- HERO -->
+    <div id="hero">
+        <div class="fog-layer"></div>
+        <div class="embers" id="embers"></div>
+
+        <div class="hero-bg">
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <circle cx="200" cy="200" r="190" stroke="#c9a84c" stroke-width="0.5" />
+                <circle cx="200" cy="200" r="150" stroke="#c9a84c" stroke-width="0.3" />
+                <circle cx="200" cy="200" r="110" stroke="#c9a84c" stroke-width="0.5" />
+                <g stroke="#c9a84c" stroke-width="0.8">
+                    <line x1="200" y1="10" x2="200" y2="30" />
+                    <line x1="295" y1="37" x2="281" y2="53" />
+                    <line x1="363" y1="117" x2="347" y2="127" />
+                    <line x1="390" y1="200" x2="370" y2="200" />
+                    <line x1="363" y1="283" x2="347" y2="273" />
+                    <line x1="295" y1="363" x2="281" y2="347" />
+                    <line x1="200" y1="390" x2="200" y2="370" />
+                    <line x1="105" y1="363" x2="119" y2="347" />
+                    <line x1="37" y1="283" x2="53" y2="273" />
+                    <line x1="10" y1="200" x2="30" y2="200" />
+                    <line x1="37" y1="117" x2="53" y2="127" />
+                    <line x1="105" y1="37" x2="119" y2="53" />
+                </g>
+                <path d="M200,60 L220,180 L340,200 L220,220 L200,340 L180,220 L60,200 L180,180 Z" stroke="#c9a84c"
+                    stroke-width="0.4" fill="none" />
+                <circle cx="200" cy="200" r="30" stroke="#c9a84c" stroke-width="0.8" />
+            </svg>
+        </div>
+
+        <div class="hero-content">
+            <p class="hero-eyebrow">⚔ &nbsp; Desarrollador Web &nbsp; ⚔</p>
+            <h1 class="hero-title">DEVELENGUAS</h1>
+            <p class="hero-subtitle">Desarrollador de Mundos · Maestro del Código</p>
+            <div class="hero-divider">
+                <span></span>
+                <span style="color:var(--gold)">✦</span>
+                <span></span>
             </div>
-            <div class="col-lg-8 col-md-7">
-                <h1 class="mb-4">Salvador Luengas</h1>
-                <p class="lead mb-5">Estudiante de Informática en programación, redes y bases de datos.</p>
-                <a href="Documents/CV_SalvadorSachezLuengas.pdf" class="btn btn-primary" download>Descargar CV <i class="fas fa-download ms-2"></i></a>
+            <p class="hero-desc">
+                En las tierras entre líneas de código y mundos sin renderizar,<br>
+                un desarrollador forja su leyenda con cada <em>commit</em>.
+            </p>
+            <div class="hero-cta-group">
+                <a href="#projects" class="btn-primary">Ver Forjas</a>
+                <a href="#cv" class="btn-secondary">⬇ Descargar Grimorio</a>
+                <a href="#contact" class="btn-secondary">✉ Invocar</a>
             </div>
         </div>
     </div>
-</section>
 
-    <!-- About Section -->
-    <section id="sobre-mi" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="fw-bold">Sobre mí</h2>
-                    <hr class="w-25 mx-auto">
+    <!-- ABOUT -->
+    <div class="section-wall"></div>
+    <section id="about">
+        <div class="about-crest">
+            <div class="crest-frame">
+                <svg class="frame-svg" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <path d="M60,5 L160,5 L215,60 L215,160 L160,215 L60,215 L5,160 L5,60 Z" stroke="#c9a84c"
+                        stroke-width="1" opacity="0.5" />
+                    <path d="M65,15 L155,15 L205,65 L205,155 L155,205 L65,205 L15,155 L15,65 Z" stroke="#c9a84c"
+                        stroke-width="0.5" opacity="0.3" />
+                    <circle cx="60" cy="5" r="2" fill="#c9a84c" opacity="0.6" />
+                    <circle cx="160" cy="5" r="2" fill="#c9a84c" opacity="0.6" />
+                    <circle cx="215" cy="60" r="2" fill="#c9a84c" opacity="0.6" />
+                    <circle cx="215" cy="160" r="2" fill="#c9a84c" opacity="0.6" />
+                    <circle cx="160" cy="215" r="2" fill="#c9a84c" opacity="0.6" />
+                    <circle cx="60" cy="215" r="2" fill="#c9a84c" opacity="0.6" />
+                    <circle cx="5" cy="160" r="2" fill="#c9a84c" opacity="0.6" />
+                    <circle cx="5" cy="60" r="2" fill="#c9a84c" opacity="0.6" />
+                </svg>
+                <div class="crest-inner">
+                    <img src="assets/Imagenes/perfilje.jpg" alt="Mi foto">
                 </div>
-                <div class="col-lg-4 text-center mb-4">
-                    <img src="Imagenes/perfilje.jpg" alt="Foto de perfil" class="profile-img">
+            </div>
+            <div class="about-status">
+                <span class="status-label">Clase</span>
+                <span class="status-value">Desarrollador Full Stack</span>
+            </div>
+            <div class="about-status">
+                <span class="status-label">Ubicación</span>
+                <span class="status-value">Puerto Escondido Oaxaca</span>
+            </div>
+            <div class="about-status">
+                <span class="status-label">Estado</span>
+                <span class="status-value" style="color:#4caf50;text-shadow:0 0 10px rgba(76,175,80,0.5)">● Listo para
+                    Programar</span>
+            </div>
+            <div class="stats-grid" style="max-width:220px">
+                <div class="stat-row">
+                    <div class="stat-header"><span>Frontend</span><span class="stat-val">90</span></div>
+                    <div class="stat-bar">
+                        <div class="stat-fill" style="width:90%"></div>
+                    </div>
                 </div>
-                <div class="col-lg-8">
-                    <p class="lead">Desarrollador junior en formación con una sólida base en programación yun fuerte interés en la tecnología. Tengo habilidades en resolución deproblemas, trabajo en equipo y aprendizaje continuo. 
-                        Me motiva laposibilidad de aplicar mis conocimientos en proyectos reales y seguircreciendo en un entorno profesional.</p>
-                    
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <h5>Lenguajes</h5>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check-circle me-2 text-success"></i> C / C++</li>
-                                <li><i class="fas fa-check-circle me-2 text-success"></i> Python</li>
-                                <li><i class="fas fa-check-circle me-2 text-success"></i> Java</li>
-                                <li><i class="fas fa-check-circle me-2 text-success"></i> PHP</li>
-                                <li><i class="fas fa-check-circle me-2 text-success"></i> SQL</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Herramientas</h5>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check-circle me-2 text-success"></i> Visual Stdio Code</li>
-                                <li><i class="fas fa-check-circle me-2 text-success"></i> Eclipse</li>
-                                <li><i class="fas fa-check-circle me-2 text-success"></i> Android Studio</li>
-                                <li><i class="fas fa-check-circle me-2 text-success"></i> HeidiSQL</li>
-                                <li><i class="fas fa-check-circle me-2 text-success"></i> Github Desktop</li>
-                            </ul>
-                        </div>
+                <div class="stat-row">
+                    <div class="stat-header"><span>Backend</span><span class="stat-val">85</span></div>
+                    <div class="stat-bar">
+                        <div class="stat-fill" style="width:85%"></div>
+                    </div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-header"><span>Manejo de versiones</span><span class="stat-val">70</span></div>
+                    <div class="stat-bar">
+                        <div class="stat-fill" style="width:70%"></div>
+                    </div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-header"><span>Contenerizacion</span><span class="stat-val">75</span></div>
+                    <div class="stat-bar">
+                        <div class="stat-fill" style="width:75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-text reveal">
+            <h2>Sobre mi</h2>
+            <p>Desarrollador web apasionado por crear experiencias digitales funcionales, claras y bien estructuradas.
+                Disfruto trabajar en equipo, compartir ideas y
+                construir soluciones que realmente aporten valor. Cuento con experiencia en el uso de Git para el
+                control de versiones y en el manejo de contenedores con Docker.
+            </p>
+            <p> Me encuentro en constante aprendizaje, perfeccionando mis habilidades tanto en frontend como en backend,
+                con el objetivo de convertirme en un desarrollador sólido y confiable.
+                Cada proyecto representa una oportunidad para crecer, mejorar y llevar mis habilidades al siguiente
+                nivel</p>
+            <div class="lore-box">
+                <p>"El código limpio no solo construye sistemas, construye caminos para que otros desarrolladores puedan
+                    avanzar sin perderse en la complejidad."</p>
+            </div>
+            <p>También comparto mi conocimiento a través de contenido en TikTok, Instagram y YouTube.</p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <div class="section-wall"></div>
+    <section id="skills">
+        <div class="section-header reveal">
+            <span class="section-label">⚔ Arsenal del Guerrero</span>
+            <h2 class="section-title">Habilidades </h2>
+            <div class="section-ornament"><span class="ornament-center">✦</span></div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card reveal">
+                <div class="skill-name">Frontend</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">React</span><span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span><span class="skill-tag">UI / UX básico</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-name">Backend</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Node.js</span><span class="skill-tag">PHP</span><span
+                        class="skill-tag">Python</span><span class="skill-tag">Laravel</span><span
+                        class="skill-tag">REST
+                        API</span><span class="skill-tag">CRUD</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-name">Bases de Datos</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">PostgreSQL</span><span class="skill-tag">MongoDB</span><span
+                        class="skill-tag">MySQL</span><span class="skill-tag">MariaDB</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-name">DevOps & Cloud</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Docker</span><span class="skill-tag">Git</span><span
+                        class="skill-tag">GitHub Actions</span><span class="skill-tag">Figma</span><span
+                        class="skill-tag">XAMPP</span><span class="skill-tag">Linux</span>
+                </div>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-name">Creación de Contenido</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">TikTok</span><span class="skill-tag">YouTube</span><span
+                        class="skill-tag">Instagram</span><span class="skill-tag">Video Editing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <div class="section-wall"></div>
+    <section id="projects">
+        <div class="section-header reveal">
+            <span class="section-label">🔥 Obras Forjadas en el Fuego</span>
+            <h2 class="section-title">Proyectos</h2>
+            <div class="section-ornament"><span class="ornament-center">✦</span></div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card reveal">
+                <div class="project-banner">
+                    <span class="project-banner-icon">⚔️</span>
+                    <span class="project-badge">Activo</span>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Proyecto Alpha</h3>
+                    <p class="project-desc">Aplicación web full stack con autenticación, base de datos y despliegue en
+                        la nube. Una fortaleza digital construida piedra por piedra.</p>
+                    <div class="project-tech">
+                        <span>React</span><span>Node.js</span><span>MongoDB</span><span>Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Develenguas" target="_blank" class="project-link">→ GitHub</a>
+                        <a href="#" class="project-link">→ Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-banner">
+                    <span class="project-banner-icon">🔮</span>
+                    <span class="project-badge">Completado</span>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Proyecto Beta</h3>
+                    <p class="project-desc">API REST robusta para gestión de datos. Como las runas antiguas, cada
+                        endpoint fue diseñado con precisión y propósito.</p>
+                    <div class="project-tech"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/Develenguas" target="_blank" class="project-link">→ GitHub</a>
+                        <a href="#" class="project-link">→ Docs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-banner">
+                    <span class="project-banner-icon">🏰</span>
+                    <span class="project-badge">En forja</span>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Proyecto Gamma</h3>
+                    <p class="project-desc">App móvil que conecta desarrolladores con proyectos freelance. Un mapa del
+                        tesoro para el gremio digital.</p>
+                    <div class="project-tech"><span>React Native</span><span>Expo</span><span>Firebase</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/Develenguas" target="_blank" class="project-link">→ GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal" style="border-color:rgba(201,168,76,0.25)">
+                <div class="project-banner" style="background:linear-gradient(135deg,#1a1f2e,#0e0c0a)">
+                    <span class="project-banner-icon">🐙</span>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Repositorio GitHub</h3>
+                    <p class="project-desc">Todos los pergaminos, prototipos y proyectos del gremio. Explorar el
+                        repositorio es recorrer la historia de cada quest completada.</p>
+                    <div class="project-tech"><span>Open Source</span><span>100+ commits</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/Develenguas" target="_blank" class="project-link">→ Ver en
+                            GitHub</a>
+                        <a href="https://github.com/Develenguas?tab=repositories" target="_blank" class="project-link">→
+                            Todos los repos</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="proyectos" class="bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="fw-bold">Proyectos</h2>
-                    <hr class="w-25 mx-auto">
+    <!-- CONTENT -->
+    <div class="section-wall"></div>
+    <section id="content">
+        <div class="section-header reveal">
+            <span class="section-label">📜 Crónicas del Reino</span>
+            <h2 class="section-title">Contenido & Media</h2>
+            <div class="section-ornament"><span class="ornament-center">✦</span></div>
+        </div>
+        <p style="text-align:center;color:var(--silver);font-style:italic;max-width:600px;margin:0 auto 50px;font-size:18px"
+            class="reveal">
+            Comparto mis conocimientos del arte del código en tres pergaminos digitales. Tutoriales, tips y gameplay del
+            mundo dev.
+        </p>
+        <div class="content-platforms">
+            <div class="platform-card reveal">
+                <div class="platform-name">TikTok</div>
+                <p class="platform-desc">Tips de programación en formato corto. Aprende algo nuevo en menos de 60
+                    segundos — rápido como un golpe crítico.</p>
+                <a href="https://www.tiktok.com/@develenguas" target="_blank" class="platform-link">→ Seguir</a>
+            </div>
+            <div class="platform-card reveal">
+                <div class="platform-name">Instagram</div>
+                <p class="platform-desc">Infografías, code snippets visuales y el día a día de un desarrollador. El
+                    grimorio ilustrado del gremio.</p>
+                <a href="https://www.instagram.com/develenguas" target="_blank" class="platform-link">→ Seguir</a>
+            </div>
+            <div class="platform-card reveal">
+                <div class="platform-name">YouTube</div>
+                <p class="platform-desc">Tutoriales en profundidad, proyectos completos y streams de código. Para los
+                    aventureros que buscan el conocimiento completo.</p>
+                <a href="https://www.youtube.com/@develenguas" target="_blank" class="platform-link">→ Suscribirse</a>
+            </div>
+            <div class="platform-card reveal">
+                <div class="platform-name">GitHub</div>
+                <p class="platform-desc">Tutoriales en profundidad, proyectos completos y streams de código. Para los
+                aventureros que buscan el conocimiento completo.</p>
+                <a href="https://github.com/Develenguas" target="_blank" class="platform-link">→ Suscribirse</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <div class="section-wall"></div>
+    <section id="certifications">
+        <div class="section-header reveal">
+            <span class="section-label">📜 Pergaminos de Honor</span>
+            <h2 class="section-title">Certificaciones</h2>
+            <div class="section-ornament"><span class="ornament-center">✦</span></div>
+        </div>
+        <div class="certs-grid">
+            <div class="cert-card reveal">
+                <div class="cert-seal">🎓</div>
+                <div class="cert-info">
+                    <div class="cert-name">Certificación 1 — Agrega aquí</div>
+                    <div class="cert-issuer">Plataforma / Institución</div>
+                    <div class="cert-date">2024</div>
+                    <a href="#" class="cert-link">Ver credencial →</a>
                 </div>
             </div>
-            <div class="row g-4">
-                <!-- Project Card 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <img src="Imagenes/Pokexplorer.png" class="card-img-top" alt="Proyecto 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Pokexplorer</h5>
-                            <p class="card-text">Pokédex responsiva creada con Html/Css/Js, consumiendo datos de una API Online.</p>
-                            <div class="mb-3">
-                                <span class="badge">Html</span>
-                                <span class="badge">Css</span>
-                                <span class="badge">JavaScript</span>
-                            </div>
-                            <div class="d-flex">
-                                <a href="https://github.com/ObjectShalvy/Pokexplorer" class="btn btn-sm btn-outline-dark" target="_blank"><i class="fab fa-github me-1"></i> GitHub</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="cert-card reveal">
+                <div class="cert-seal">⚡</div>
+                <div class="cert-info">
+                    <div class="cert-name">Certificación 2 — Agrega aquí</div>
+                    <div class="cert-issuer">Plataforma / Institución</div>
+                    <div class="cert-date">2023</div>
+                    <a href="#" class="cert-link">Ver credencial →</a>
                 </div>
-                
-                <!-- Project Card 2 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <img src="Imagenes/Cubo.png" class="card-img-top" alt="Proyecto 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Cubo Rubik</h5>
-                            <p class="card-text">Cubo Rubik interactivo desarrollado con HTML, CSS y JavaScript, que simula la experiencia de resolver el cubo en un entorno web.</p>
-                            <div class="mb-3">
-                                <span class="badge">Html</span>
-                                <span class="badge">Css</span>
-                                <span class="badge">JavaScript</span>
-                            </div>
-                            <div class="d-flex">
-                                <a href="https://github.com/ObjectShalvy/CuboRubik" class="btn btn-sm btn-outline-dark" target="_blank"><i class="fab fa-github me-1"></i> GitHub</a>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="cert-card reveal">
+                <div class="cert-seal">🔥</div>
+                <div class="cert-info">
+                    <div class="cert-name">Certificación 3 — Agrega aquí</div>
+                    <div class="cert-issuer">Plataforma / Institución</div>
+                    <div class="cert-date">2023</div>
+                    <a href="#" class="cert-link">Ver credencial →</a>
                 </div>
-                
-                <!-- Project Card 3 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <img src="Imagenes/GestoAbc.png" class="card-img-top" alt="Proyecto 3">
-                        <div class="card-body">
-                            <h5 class="card-title">GestoAbc</h5>
-                            <p class="card-text">Detecta el movimiento de las manos y las posiciones para identificar letras en lenguaje de señas</p>
-                            <div class="mb-3">
-                                <span class="badge">Python</span>
-                            </div>
-                            <div class="d-flex">
-                                <a href="https://github.com/ObjectShalvy/GestoAbc" class="btn btn-sm btn-outline-dark" target="_blank"><i class="fab fa-github me-1"></i> GitHub</a>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="cert-card reveal">
+                <div class="cert-seal">🛡️</div>
+                <div class="cert-info">
+                    <div class="cert-name">Certificación 4 — Agrega aquí</div>
+                    <div class="cert-issuer">Plataforma / Institución</div>
+                    <div class="cert-date">2022</div>
+                    <a href="#" class="cert-link">Ver credencial →</a>
                 </div>
-                
-                <!-- Project Card 4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <img src="Imagenes/MaquinaTuring.png" class="card-img-top" alt="Proyecto 4">
-                        <div class="card-body">
-                            <h5 class="card-title">MaquinaTuring</h5>
-                            <p class="card-text">Implementación de una máquina de Turing que duplica una cadena ingresada y muestra ambas versiones de la cadena de manera gráfica durante la ejecución.</p>
-                            <div class="mb-3">
-                                <span class="badge">C</span>
-                            </div>
-                            <div class="d-flex">
-                                <a href="https://github.com/ObjectShalvy/MaquinaDeTuring" class="btn btn-sm btn-outline-dark" target="_blank"><i class="fab fa-github me-1"></i> GitHub</a>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="cert-card reveal">
+                <div class="cert-seal">🗡️</div>
+                <div class="cert-info">
+                    <div class="cert-name">Certificación 5 — Agrega aquí</div>
+                    <div class="cert-issuer">Plataforma / Institución</div>
+                    <div class="cert-date">2022</div>
+                    <a href="#" class="cert-link">Ver credencial →</a>
                 </div>
-                
-                <!-- Project Card 5 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <img src="Imagenes/listas.png" class="card-img-top" alt="Proyecto 5">
-                        <div class="card-body">
-                            <h5 class="card-title">Lista de Tareas</h5>
-                            <p class="card-text">Aplicación para gestion de tareas, permitiendo agregar, eliminar y marcar como realizadas o pendientes.</p>
-                            <div class="mb-3">
-                                <span class="badge">Java</span>
-                            </div>
-                            <div class="d-flex">
-                                <a href="https://github.com/ObjectShalvy/ListaTareas" class="btn btn-sm btn-outline-dark" target="_blank"><i class="fab fa-github me-1"></i> GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project Card 6 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <img src="Imagenes/subneteo.png" class="card-img-top" alt="Proyecto 6">
-                        <div class="card-body">
-                            <h5 class="card-title">Subneteo de Red</h5>
-                            <p class="card-text">Simulación de subneteo de red en un edificio de varios pisos para optimizar la distribución de direcciones IP.</p>
-                            <div class="mb-3">
-                                <span class="badge">Cisco Packet Tracer</span>
-                            </div>
-                            <div class="d-flex">
-                                <a href="https://github.com/ObjectShalvy/Red-Lan-Cisco-Packet-tracer" class="btn btn-sm btn-outline-dark" target="_blank"><i class="fab fa-github me-1"></i> GitHub</a>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="cert-card reveal">
+                <div class="cert-seal">☁️</div>
+                <div class="cert-info">
+                    <div class="cert-name">Certificación 6 — Agrega aquí</div>
+                    <div class="cert-issuer">Plataforma / Institución</div>
+                    <div class="cert-date">2021</div>
+                    <a href="#" class="cert-link">Ver credencial →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="habilidades">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="fw-bold">Habilidades</h2>
-                    <hr class="w-25 mx-auto">
-                </div>
-            </div>
-            
-            <!-- Frontend Skills -->
-            <div class="row mb-5">
-                <div class="col-12">
-                    <h4 class="mb-4">Desarrollo</h4>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card text-center h-100">
-                        <div class="skill-icon">
-                            <i class="fab fa-html5"></i>
-                        </div>
-                        <h5>Html/Css/Js</h5>
-                        <p class="mb-2">Desarrollo de paginas web</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card text-center h-100">
-                        <div class="skill-icon">
-                            <i class="fas fa-c"></i>
-                        </div>
-                        <h5>C/C++</h5>
-                        <p class="mb-2">Desarrollo de manejo y Estructura de datos</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card text-center h-100">
-                        <div class="skill-icon">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <h5>Python</h5>
-                        <p class="mb-2">Desarrollo de interfaces dinámicas </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card text-center h-100">
-                        <div class="skill-icon">
-                            <i class="fab fa-java"></i>
-                        </div>
-                        <h5> Java </h5>
-                        <p class="mb-2">Desarrollo Orientado a Objetos</p>
-                    </div>
-                </div>
-            </div>
-            <!-- DevOps Skills -->
-            <div class="row">
-                <div class="col-12">
-                    <h4 class="mb-4">Herramientas</h4>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card text-center h-100">
-                        <div class="skill-icon">
-                            <i class="fab fa-git-alt"></i>
-                        </div>
-                        <h5>Git</h5>
-                        <p class="mb-2">Control de versiones y automatización de despliegues</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card text-center h-100">
-                        <div class="skill-icon">
-                            <img src="https://cdn.simpleicons.org/androidstudio/000000" alt="Android Studio" width="40" height="40">
-                        </div>
-                        <h5>Android Studio</h5>
-                        <p class="mb-2">Desarrollo de aplicaciones mobiles</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card text-center h-100">
-                        <div class="skill-icon">
-                            <img src="https://cdn.simpleicons.org/eclipseide/000000" alt="Eclipse IDE" width="40">
-                        </div>
-                        <h5>Eclipse</h5>
-                        <p class="mb-2">Desarrollo en java</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="skill-card text-center h-100">
-                        <div class="skill-icon">
-                            <img src="https://cdn.simpleicons.org/mariadb/000000" alt="MariaDB" width="40">
-                        </div>
-                        <h5>MariaSQL</h5>
-                        <p class="mb-2">Manejo y creacion de Bases de datos</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <div class="col-12 text-center">
-                    <h4 class="mb-4">Otras habilidades técnicas</h4>
-                    <div class="row justify-content-center">
-                        <div class="col-md-8">
-                            <div class="d-flex flex-wrap justify-content-center gap-3">
-                                <span class="badge bg-dark">Matlab</span>
-                                <span class="badge bg-dark">C++</span>
-                                <span class="badge bg-dark">Electronica</span>
-                                <span class="badge bg-dark">Cisco</span>
-                                <span class="badge bg-dark">Figma</span>
-                                <span class="badge bg-dark">HeidiSQL</span>
-                                <span class="badge bg-dark">FreeBsd</span>
-                                <span class="badge bg-dark">Ubuntu</span>
-                                <span class="badge bg-dark">Photoshop</span>
-                                <span class="badge bg-dark">SonyVegas</span>
-                                <span class="badge bg-dark">AdobeXD</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- CV -->
+    <div class="section-wall"></div>
+    <section id="cv">
+        <div class="section-header reveal">
+            <span class="section-label">📖 El Grimorio</span>
+            <h2 class="section-title">Currículum</h2>
+            <div class="section-ornament"><span class="ornament-center">✦</span></div>
         </div>
-    </section>
-    
-    <!-- Certificaciones Section -->
-    <section id="certificaciones" class="bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="fw-bold">Certificaciones</h2>
-                    <hr class="w-25 mx-auto">
-                </div>
-            </div>
-            
-            <div class="row">
-                <!-- Certificación 1 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="cert-card">
-                        <div class="text-center">
-                            <img src="Imagenes/C1.jpg" alt="AWS Certified Logo" class="cert-logo" style="width: 80%; max-width: 300px; height: auto;">
-                        </div>
-                        <h5 class="mt-3">Programación en C de Cero a Experto con Estructura de Datos</h5>
-                        <p class="mb-2">Udemy</p>
-                        <p class="mb-3">Certificación profesional que valida conocimientos en Programacion de bajo nivel en C.</p>
-                        <p class="cert-date">Expedición: 5 Julio 2024</p>
-                    </div>
-                </div>
-                
-                <!-- Certificación 2 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="cert-card">
-                        <div class="text-center">
-                            <img src="Imagenes/C2.jpg" alt="AWS Certified Logo" class="cert-logo" style="width: 80%; max-width: 300px; height: auto;">
-                        </div>
-                        <h5 class="mt-3">Curso de Hacking Etico: Pentesting en Android Avanzado utilizando python y Linux</h5>
-                        <p class="mb-2">Udemy</p>
-                        <p class="mb-3">Curso practico en Pentesting en Android Avanzado</p>
-                        <p class="cert-date">Expedición: 24 Agosto 2024 </p>
-                    </div>
-                </div>
-                
-                <!-- Certificación 3 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="cert-card">
-                        <div class="text-center">
-                            <img src="Imagenes/C3.jpg" alt="AWS Certified Logo" class="cert-logo" style="width: 80%; max-width: 300px; height: auto;">
-                        </div>
-                        <h5 class="mt-3">Curso Completo de Hacking Etico - Aprende todo - 2024 </h5>
-                        <p class="mb-2">Udemy</p>
-                        <p class="mb-3">Acredita conocmiento teorico para actividades de Hacking Etico </p>
-                        <p class="cert-date">Expedición: 16 Octubre 2024</p>
-                    </div>
-                </div>
-                
-                
-                </div>
-            </div>
+        <div class="cv-altar reveal">
+            <span class="cv-altar-icon">📜</span>
+            <h3>Grimorio del Desarrollador</h3>
+            <p>Cada habilidad forjada, cada proyecto completado, cada certificación ganada —<br>todo registrado en este
+                pergamino para los que buscan un aliado de confianza.</p>
+            <a href="cv-develenguas.pdf" download class="btn-primary" style="margin-bottom:12px">
+                ⬇ &nbsp; Descargar Grimorio (PDF)
+            </a>
+            <br>
+            <a href="cv-develenguas.pdf" target="_blank" class="btn-secondary" style="margin-top:12px">
+                👁 &nbsp; Ver en línea
+            </a>
+            <p style="margin-top:28px;font-size:14px;color:var(--fog);font-style:italic">
+                Última actualización: 2025 · Versión 2.0
+            </p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contacto" class="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="fw-bold">Contactame</h2>
-                    <hr class="w-25 mx-auto">
-                    <p class="lead">¿Interesado en trabajar juntos? ¡Contáctame!</p>
-                </div>
-                <div class="col-lg-6 mx-auto text-center">
-                    <a href="mailto:teclagg051123@gmail.com" class="btn btn-light btn-lg mb-4">
-                        <i class="fas fa-envelope me-2"></i> Enviar email
+    <!-- CONTACT -->
+    <div class="section-wall"></div>
+    <section id="contact" style="padding-bottom:120px">
+        <div class="section-header reveal">
+            <span class="section-label">🔮 El Altar de Invocación</span>
+            <h2 class="section-title">Contacto</h2>
+            <div class="section-ornament"><span class="ornament-center">✦</span></div>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-lore reveal">
+                <p>"Para convocar a un forjador de código, primero debes saber cómo encontrarle. Aquí están los caminos
+                    que atraviesan el reino digital hasta el gremio."</p>
+                <div class="contact-links">
+                    <a href="mailto:tu.correo@gmail.com" class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div class="contact-text">
+                            <span class="contact-label">Correo</span>
+                            <span class="contact-value">tu.correo@gmail.com</span>
+                        </div>
+                        <span class="contact-arrow">→</span>
                     </a>
-                    <div class="col-lg-6 mx-auto text-center">
-                        <a href="https://wa.me/9541133263" target="_blank" class="btn btn-success btn-lg mb-4">
-                            <i class="fab fa-whatsapp me-2"></i> Enviar WhatsApp
-                        </a>
-                    </div>   
-                    <a href="https://www.linkedin.com/in/salvador-luengas-7b8020316/" target="_blank" class="btn btn-primary">
-                        <i class="fab fa-linkedin me-2"></i> Enviar en LinkedIn
-                      </a>
-                                       
-                    <div class="social-icons d-flex justify-content-center mt-4">
-                        <a href="https://github.com/ObjectShalvy" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.youtube.com/@Shalvyz" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/luji.sarutani/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
+                    <a href="https://github.com/Develenguas" target="_blank" class="contact-item">
+                        <span class="contact-icon">🐙</span>
+                        <div class="contact-text">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">github.com/Develenguas</span>
+                        </div>
+                        <span class="contact-arrow">→</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/develenguas" target="_blank" class="contact-item">
+                        <span class="contact-icon">💼</span>
+                        <div class="contact-text">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">linkedin.com/in/develenguas</span>
+                        </div>
+                        <span class="contact-arrow">→</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@develenguas" target="_blank" class="contact-item">
+                        <span class="contact-icon">🎵</span>
+                        <div class="contact-text">
+                            <span class="contact-label">TikTok</span>
+                            <span class="contact-value">@develenguas</span>
+                        </div>
+                        <span class="contact-arrow">→</span>
+                    </a>
+                    <a href="https://www.instagram.com/develenguas" target="_blank" class="contact-item">
+                        <span class="contact-icon">📸</span>
+                        <div class="contact-text">
+                            <span class="contact-label">Instagram</span>
+                            <span class="contact-value">@develenguas</span>
+                        </div>
+                        <span class="contact-arrow">→</span>
+                    </a>
                 </div>
+            </div>
+
+            <div class="contact-form reveal">
+                <div class="form-field">
+                    <label class="form-label">Tu nombre</label>
+                    <input type="text" class="form-input" placeholder="Viajero anónimo...">
+                </div>
+                <div class="form-field">
+                    <label class="form-label">Correo de respuesta</label>
+                    <input type="email" class="form-input" placeholder="correo@reino.com">
+                </div>
+                <div class="form-field">
+                    <label class="form-label">Tu misión</label>
+                    <textarea class="form-textarea" placeholder="Describe tu quest o propuesta..."></textarea>
+                </div>
+                <button class="btn-primary" onclick="handleFormSubmit()" style="border:none;cursor:pointer">
+                    ⚔ &nbsp; Enviar Mensaje
+                </button>
+                <p id="form-msg" style="color:var(--gold);font-style:italic;font-size:15px;margin-top:8px;display:none">
+                    ✦ Mensaje enviado. El forjador responderá pronto.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center py-4">
-        <div class="container">
-            <p class="mb-0">© 2025 Salvador Luengas. Todos los derechos reservados.</p>
-        </div>
+    <!-- FOOTER -->
+    <footer>
+        <p class="footer-rune">✦ &nbsp; Develenguas &nbsp; · &nbsp; Forjador de Código &nbsp; ✦</p>
+        <p class="footer-copy">Construido con fuego, acero y JavaScript &nbsp;·&nbsp; © 2025</p>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <a href="#hero" id="back-top" title="Volver arriba">▲</a>
+
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
